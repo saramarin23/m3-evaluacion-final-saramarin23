@@ -8,6 +8,12 @@ A partir de una API pintamos un listado de personajes.
 
 Filtrar personajes con una búsqueda por nombre.
 
+# Tercera parte
+
+Crear componentes y mover la información a los mismos.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
