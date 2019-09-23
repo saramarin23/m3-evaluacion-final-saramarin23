@@ -42,7 +42,14 @@ class App extends React.Component {
           src="./official-logo.png"
           alt="Evaluación final"
         />
-        <input type="search" onChange={this.inputSearch} />
+        <div className="input-container">
+          <input
+            className="input"
+            type="search"
+            placeholder="search your favorite character"
+            onChange={this.inputSearch}
+          />
+        </div>
         <ul className="App__List">
           {data
             .filter(myCharacter =>

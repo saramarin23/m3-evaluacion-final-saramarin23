@@ -4,6 +4,10 @@
 
 A partir de una API pintamos un listado de personajes.
 
+# Segunda parte
+
+Filtrar personajes con una búsqueda por nombre.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
