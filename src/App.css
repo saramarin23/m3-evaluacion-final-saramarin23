@@ -1,5 +1,11 @@
 * {
   margin: 0;
+  box-sizing: border-box;
+}
+
+.home-logo {
+  max-height: 150px;
+  margin: 30px;
 }
 
 .App {
