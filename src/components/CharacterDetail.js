@@ -13,7 +13,7 @@ const CharacterDetail = props => {
         <div className="details-links">
           <Header />
           <Link to="/" className="app__back">
-            <div>
+            <div className="back-container">
               <img
                 className="logo-home"
                 src="./home-photo.png"
@@ -24,7 +24,7 @@ const CharacterDetail = props => {
           </Link>
         </div>
         <div className="character-details--card">
-          <div>
+          <div className="character-img_container">
             <img className="character-img" src={image} alt={name} />
           </div>
           <div className="character-details">
@@ -40,15 +40,19 @@ const CharacterDetail = props => {
   } else {
     return (
       <React.Fragment>
-        <Header />
-        <Link to="/" className="app__back">
-          <img
-            className="logo-home"
-            src="./home-photo.png"
-            alt="Volver a la home"
-          />
-          Volvamos a la home
-        </Link>
+        <div className="details-links">
+          <Header />
+          <Link to="/" className="app__back">
+            <div className="back-container">
+              <img
+                className="logo-home"
+                src="./home-photo.png"
+                alt="Volver a la home"
+              />
+              <h2>Volver</h2>
+            </div>
+          </Link>
+        </div>
         <div>
           <img className="facepalm-gif" src="./facepalm.gif" alt="Error" />
           <p>Ese personaje no existe</p>

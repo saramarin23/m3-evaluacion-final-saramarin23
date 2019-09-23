@@ -3,15 +3,19 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: black;
+}
+
 .home-logo {
   max-height: 150px;
   margin: 30px;
 }
 
 .App {
-  text-align: center;
-  background-color: black;
   color: white;
+  height: 100vh;
+  text-align: center;
 }
 
 .input-container {
@@ -38,17 +42,33 @@
   padding: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 40px;
   list-style: none;
+  align-items: center;
 }
 
 .App__List--c {
   margin: 20px;
   max-width: 200px;
+  transform: translateZ(0);
+  text-align: center;
+  align-self: center;
+  height: 317px;
+  transition: transform 0.25s ease-out;
+}
+
+.App__List--c:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .App__List--c-card {
+  display: flex;
+  flex-direction: column;
   width: 200px;
+  height: 74px;
+  justify-content: center;
+  column-gap: 40px;
+  text-align: center;
   background: #13b0c9;
   z-index: 1;
 }
@@ -61,6 +81,10 @@ a {
   color: white;
 }
 
+.back-container {
+  margin: 30px;
+}
+
 .facepalm-gif {
   height: 200px;
 }
@@ -69,16 +93,28 @@ a {
   width: 200px;
 }
 
+.character__link {
+  justify-content: center;
+}
+
 .character-details--card {
   display: flex;
   background: #13b0c9;
   width: 50%;
-  margin: 0 auto;
+  height: 40%;
+  margin: 100px auto;
 }
 
 .character-details {
   margin: auto;
   align-items: center;
+  justify-content: left;
+  text-align: left;
+}
+
+.character-img_container {
+  margin: auto;
+  width: 40%;
 }
 
 .details-links {
