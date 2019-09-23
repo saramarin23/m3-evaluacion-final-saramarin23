@@ -7,7 +7,7 @@ const Filters = props => {
       <input
         className="input"
         type="search"
-        placeholder="search your favorite character"
+        placeholder="busca tu personaje favorito"
         onChange={inputSearch}
       />
     </div>

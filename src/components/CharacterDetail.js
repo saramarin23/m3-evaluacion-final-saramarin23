@@ -4,33 +4,36 @@ import { Link } from "react-router-dom";
 
 const CharacterDetail = props => {
   const { routerProps, data } = props;
-  console.log(data);
   const characterID = parseInt(routerProps.match.params.id);
   const character = data.filter(item => item.id === characterID);
   if (character[0]) {
-    const { name, image, species, origin, episode } = character[0];
-    console.log(character);
+    const { name, image, species, origin, episode, status } = character[0];
     return (
       <React.Fragment>
-        <Header />
-        <Link to="/" className="app__back">
-          <div>
-            <img
-              className="logo-home"
-              src="./home-photo.png"
-              alt="Volver a la home"
-            />
-            <h2>Volvamos a la home</h2>
-          </div>
-        </Link>
-        <div className="character-details">
-          <h2>{name}</h2>
+        <div className="details-links">
+          <Header />
+          <Link to="/" className="app__back">
+            <div>
+              <img
+                className="logo-home"
+                src="./home-photo.png"
+                alt="Volver a la home"
+              />
+              <h2>Volver</h2>
+            </div>
+          </Link>
+        </div>
+        <div className="character-details--card">
           <div>
             <img className="character-img" src={image} alt={name} />
           </div>
-          <p>{species}</p>
-          <p>{origin.name}</p>
-          <p>{episode.length}</p>
+          <div className="character-details">
+            <h2>{name}</h2>
+            <p>Status: {status}</p>
+            <p>Species: {species}</p>
+            <p>Origin: {origin.name}</p>
+            <p>Episodes: {episode.length}</p>
+          </div>
         </div>
       </React.Fragment>
     );

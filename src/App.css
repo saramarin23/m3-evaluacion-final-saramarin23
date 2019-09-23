@@ -1,7 +1,6 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  background-color: black;
 }
 
 .home-logo {
@@ -11,6 +10,7 @@
 
 .App {
   text-align: center;
+  background-color: black;
   color: white;
 }
 
@@ -21,12 +21,16 @@
 .input {
   height: 50px;
   width: 300px;
-  border: 3px solid #01ccfe;
+  border: 3px solid #13b0c9;
   border-radius: 5px;
   background-color: black;
   color: white;
   font-family: sans-serif;
   font-size: 20px;
+}
+
+.logo-home {
+  width: 100px;
 }
 
 .App__List {
@@ -38,10 +42,20 @@
   list-style: none;
 }
 
-.logo-home {
-  width: 100px;
+.App__List--c {
+  margin: 20px;
+  max-width: 200px;
 }
 
+.App__List--c-card {
+  width: 200px;
+  background: #13b0c9;
+  z-index: 1;
+}
+
+.App__List--c-photo {
+  width: 200px;
+}
 a {
   text-decoration: none;
   color: white;
@@ -49,4 +63,25 @@ a {
 
 .facepalm-gif {
   height: 200px;
+}
+
+.character-img {
+  width: 200px;
+}
+
+.character-details--card {
+  display: flex;
+  background: #13b0c9;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.character-details {
+  margin: auto;
+  align-items: center;
+}
+
+.details-links {
+  display: flex;
+  justify-content: space-evenly;
 }

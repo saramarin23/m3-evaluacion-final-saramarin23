@@ -9,8 +9,10 @@ const CharacterCard = props => {
         src={character.image}
         alt={character.name}
       />
-      <h2 className="App__List--c-name">{character.name}</h2>
-      <p className="App__List--c-specie">{character.species}</p>
+      <div className="App__List--c-card">
+        <h2 className="App__List--c-name">{character.name}</h2>
+        <p className="App__List--c-specie">{character.species}</p>
+      </div>
     </li>
   );
 };
