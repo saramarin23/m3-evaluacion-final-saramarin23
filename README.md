@@ -1,5 +1,9 @@
 ## `Evaluación Módulo 3 Adalab`
 
+# Primera parte
+
+A partir de una API pintamos un listado de personajes.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
