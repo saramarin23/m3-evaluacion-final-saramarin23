@@ -1,5 +1,6 @@
 import React from "react";
 import CharacterCard from "./CharacterCard";
+import { Link } from "react-router-dom";
 
 const CharacterList = props => {
   const { character, query } = props;
@@ -10,7 +11,15 @@ const CharacterList = props => {
           myCharacter.name.toLowerCase().includes(query.toLowerCase())
         )
         .map((character, index) => {
-          return <CharacterCard key={index} character={character} />;
+          return (
+            <Link
+              key={index}
+              to={`/character-detail/${character.id}`}
+              className="character__link"
+            >
+              <CharacterCard key={index} character={character} />
+            </Link>
+          );
         })}
     </ul>
   );

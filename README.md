@@ -1,16 +1,20 @@
 ## `Evaluación Módulo 3 Adalab`
 
-# Primera parte
+## Primera parte
 
 A partir de una API pintamos un listado de personajes.
 
-# Segunda parte
+## Segunda parte
 
 Filtrar personajes con una búsqueda por nombre.
 
-# Tercera parte
+## Tercera parte
 
 Crear componentes y mover la información a los mismos.
+
+## Cuarta parte
+
+Añadir rutas y React router.
 
 ---
 

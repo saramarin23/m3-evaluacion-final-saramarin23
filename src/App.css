@@ -37,3 +37,16 @@
   column-gap: 40px;
   list-style: none;
 }
+
+.logo-home {
+  width: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.facepalm-gif {
+  height: 200px;
+}

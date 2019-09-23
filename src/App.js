@@ -1,8 +1,8 @@
 import React from "react";
 import data from "./services/data";
-import Header from "./components/Header";
-import Filters from "./components/Filters";
-import CharacterList from "./components/CharacterList";
+import Home from "./components/Home";
+import CharacterDetail from "./components/CharacterDetail";
+import { Switch, Route } from "react-router-dom";
 import "./App.css";
 
 class App extends React.Component {
@@ -36,9 +36,27 @@ class App extends React.Component {
     const { data, query } = this.state;
     return (
       <div className="App">
-        <Header />
-        <Filters inputSearch={this.inputSearch} />
-        <CharacterList character={data} query={query} />
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => {
+              return (
+                <Home
+                  inputSearch={this.inputSearch}
+                  query={query}
+                  data={data}
+                />
+              );
+            }}
+          />
+          <Route
+            path="/character-detail/:id"
+            render={routerProps => {
+              return <CharacterDetail routerProps={routerProps} data={data} />;
+            }}
+          />
+        </Switch>
       </div>
     );
   }
