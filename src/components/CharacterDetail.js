@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import { Link } from "react-router-dom";
+import "./../stylesheets/CharacterDetail.scss";
 
 const CharacterDetail = props => {
   const { routerProps, data } = props;

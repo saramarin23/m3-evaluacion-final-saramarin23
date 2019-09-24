@@ -1,4 +1,5 @@
 import React from "react";
+import "./../stylesheets/Filters.scss";
 
 const Filters = props => {
   const { inputSearch } = props;

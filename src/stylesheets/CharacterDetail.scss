@@ -1,0 +1,48 @@
+.details-links {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.back-container {
+    margin: 30px;
+}
+
+.logo-home {
+    width: 100px;
+}
+
+.character-details {
+    margin: auto;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+
+    &--card {
+        display: flex;
+        background: #13b0c9;
+        width: 50%;
+        height: 40%;
+        margin: 100px auto;
+    }
+}
+
+.character-img {
+    width: 200px;
+
+    &_container {
+        margin: auto;
+        width: 40%;
+    }
+}
+
+.facepalm-gif {
+    height: 200px;
+}
+
+@media all and (max-width: 768px) {
+
+    .character-img {
+        width: 80%;
+    }
+}
