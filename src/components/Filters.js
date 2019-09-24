@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./../stylesheets/Filters.scss";
 
 const Filters = props => {
@@ -13,6 +14,10 @@ const Filters = props => {
       />
     </div>
   );
+};
+
+Filters.propTypes = {
+  inputSearch: PropTypes.func
 };
 
 export default Filters;

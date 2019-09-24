@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./../stylesheets/CharacterCard.scss";
 
 const CharacterCard = props => {
@@ -16,6 +17,10 @@ const CharacterCard = props => {
       </div>
     </li>
   );
+};
+
+CharacterCard.propTypes = {
+  character: PropTypes.object.isRequired
 };
 
 export default CharacterCard;
