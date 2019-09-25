@@ -10,9 +10,11 @@ class App extends React.Component {
     super(props);
     this.state = {
       data: [],
-      query: ""
+      query: "",
+      gender: ""
     };
     this.inputSearch = this.inputSearch.bind(this);
+    this.handleSelect = this.handleSelect.bind(this);
   }
 
   componentDidMount() {
@@ -32,8 +34,13 @@ class App extends React.Component {
     this.setState({ query: value });
   }
 
+  handleSelect(e) {
+    const value = e.currentTarget.value;
+    this.setState({ gender: value });
+  }
+
   render() {
-    const { data, query } = this.state;
+    const { data, query, gender } = this.state;
     return (
       <div className="App">
         <Switch>
@@ -46,6 +53,8 @@ class App extends React.Component {
                   inputSearch={this.inputSearch}
                   query={query}
                   data={data}
+                  gender={gender}
+                  handleSelect={this.handleSelect}
                 />
               );
             }}

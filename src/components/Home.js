@@ -5,12 +5,13 @@ import PropTypes from "prop-types";
 import CharacterList from "./CharacterList";
 
 const Home = props => {
-  const { data, query, inputSearch } = props;
+  const { data, query, inputSearch, handleSelect, gender } = props;
+  console.log(props);
   return (
     <React.Fragment>
       <Header />
-      <Filters inputSearch={inputSearch} />
-      <CharacterList character={data} query={query} />
+      <Filters inputSearch={inputSearch} handleSelect={handleSelect} />
+      <CharacterList character={data} query={query} gender={gender} />
     </React.Fragment>
   );
 };

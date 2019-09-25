@@ -4,13 +4,17 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const CharacterList = props => {
-  const { character, query } = props;
+  const { character, query, gender } = props;
+  console.log(props);
   return (
     <ul className="App__List">
       {character
         .filter(myCharacter =>
           myCharacter.name.toLowerCase().includes(query.toLowerCase())
         )
+        .filter(character => {
+          return character.gender.includes(gender);
+        })
         .map((character, index) => {
           return (
             <Link
